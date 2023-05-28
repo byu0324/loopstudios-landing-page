@@ -1,0 +1,28 @@
+@import '_header';
+
+:root {
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+picture {
+
+  source {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}

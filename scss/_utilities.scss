@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+$c-white: hsl(0, 0%, 100%);
+$c-black: hsl(0, 0%, 0%);
+$c-dark-black: hsl(0, 0%, 55%);
+$c-very-dark-black: hsl(0, 0%, 41%);
+
+$f-Alata: 'Alata', sans-serif;
+$f-Josefin: 'Josefin Sans', sans-serif;
+
+@mixin mobile {
+  @media (max-width: 819px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 820px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1130px) {
+    @content;
+  }
+}
