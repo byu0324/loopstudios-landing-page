@@ -140,6 +140,7 @@ header {
 
   @include tablet {
     margin: 160px 40% 75px 0;
+    width: 60%;
   }
 
   @include desktop {
