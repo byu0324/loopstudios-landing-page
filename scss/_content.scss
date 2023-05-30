@@ -1,0 +1,67 @@
+@use '_utilities' as *;
+
+main {
+  margin: 90px 20px;
+
+  @include tablet {
+    margin: 80px;
+  }
+
+  @include desktop {
+    margin: 100px auto;
+  }
+}
+
+.interactive {
+  font-family: $f-Josefin;
+  font-weight: 300;
+  text-align: center;
+
+  @include desktop {
+    width: 80%;
+    max-width: 1140px;
+    display: flex;
+    position: relative;
+    text-align: left;
+    justify-content: center;;
+    margin: auto;
+  }
+
+  picture {
+    width: 700px;
+    max-width: 730px;
+    margin-right: auto;
+  }
+}
+
+.text {
+  margin: 40px 25px 60px 25px;
+
+  @include desktop {
+    position: absolute;
+    width: 580px;
+    background-color: $c-white;
+    padding: 70px 70px 0 70px;
+    margin: 0;
+    bottom: 0;
+    right: 40px;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+
+  @include desktop {
+    font-size: 3rem;
+  }
+}
+
+.content {
+  font-family: $f-Alata;
+  font-weight: 400;
+  color: $c-dark-black;
+  line-height: 30px;
+}

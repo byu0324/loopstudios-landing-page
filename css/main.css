@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 header {
   background-image: url("../images/mobile/image-hero.jpg");
   background-size: cover;
@@ -156,6 +157,76 @@ header {
   }
 }
 
+main {
+  margin: 90px 20px;
+}
+@media (min-width: 820px) {
+  main {
+    margin: 80px;
+  }
+}
+@media (min-width: 1130px) {
+  main {
+    margin: 100px auto;
+  }
+}
+
+.interactive {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+@media (min-width: 1130px) {
+  .interactive {
+    width: 80%;
+    max-width: 1140px;
+    display: flex;
+    position: relative;
+    text-align: left;
+    justify-content: center;
+    margin: auto;
+  }
+}
+.interactive picture {
+  width: 700px;
+  max-width: 730px;
+  margin-right: auto;
+}
+
+.text {
+  margin: 40px 25px 60px 25px;
+}
+@media (min-width: 1130px) {
+  .text {
+    position: absolute;
+    width: 580px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 70px 70px 0 70px;
+    margin: 0;
+    bottom: 0;
+    right: 40px;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+@media (min-width: 1130px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.content {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 55%);
+  line-height: 30px;
+}
+
 :root {
   font-size: 15px;
 }
@@ -172,9 +243,6 @@ li {
   list-style: none;
 }
 
-picture source {
-  width: 100%;
-}
-picture img {
+img {
   width: 100%;
 }
