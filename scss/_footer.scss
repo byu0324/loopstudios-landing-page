@@ -2,4 +2,78 @@
 
 footer {
   background-color: $c-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-wrapper {
+  margin: 40px 20px;
+  width: 86%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+  }
+}
+
+.footer-logo {
+  @include desktop {
+    width: 150px;
+  }
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+
+  li {
+    font-family: $f-Alata;
+    font-weight: 400;
+
+    a {
+      text-decoration: none;
+      color: $c-white;
+    }
+  }
+
+  @include desktop {
+    flex-direction: row;
+    order: 2;
+    margin: 0;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  gap: 14px;
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  @include desktop {
+    justify-content: end;
+  }
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  color: $c-dark-black;
+
+  @include desktop {
+    order: 3;
+    margin-top: 0;
+    text-align: end;
+  }
 }
